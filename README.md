@@ -24,7 +24,7 @@ based on the settings you have selected on the page. You _must_ click generate y
 
 1. Clone the repo to your machine: `git clone <url-of-this-repo>`
 2. Navigate to the directory this repo is in. `cd <path-to-this-downloaded-repo-on-your-machine>`
-3. Execute `npm init`
+3. Execute `npm init` and then `node server.js`
 4. The server should now be running on port 7860 (can be changed in `server.js` file)
 5. Now, upload the browser extension by navigating over to `chrome://extension` (sorry I only tested this for chrome, this is just a personal project), click upload unpacked extension. Upload the extension folder, give it whatever permissions it needs as well as the permission to read local files.
 6. Make sure the extension is loaded, then click on the link present on your `chrome://extension` page to open a new window where you can see the console messages the extension is printing. This will also make sure chrome does not put the extension to sleep (it will not work if it's asleep sadly, the web socket connection between the extension and your running server will close).
